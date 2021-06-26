@@ -30,6 +30,11 @@ code {
   padding: 24px;
 }
 
+.m2{
+  margin: 16px;
+}
+
+
 .mb2{
   margin-bottom: 16px ;
 }
@@ -75,6 +80,11 @@ ul{
   flex: 0 0 auto;
 }
 
+.flex-space-between{
+  justify-content: space-between;
+  
+}
+
 .button{
   background-color: #5200F5; 
   border: none;
@@ -90,7 +100,7 @@ ul{
   background-color: #D6C0FF; 
   border: none;
   color: #5200F5;
-  padding: 4px 8px;
+  padding: 4px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
