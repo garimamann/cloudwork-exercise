@@ -6,9 +6,94 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #5200F5;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.w80{
+  width:80%;
+}
+
+.p1{
+  padding: 8px;
+}
+.p2{
+  padding: 16px;
+}
+
+.p3{
+  padding: 24px;
+}
+
+.mb2{
+  margin-bottom: 16px ;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider{
+  width: 100%;
+        height: 2px;
+        background: #5200F5;
+        outline: none;
+        opacity: 0.9;
+        
+}
+
+.app{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+
+.border{
+  border: 3px solid #5200F5;
+}
+
+.flex{
+  display: flex;
+    
+}
+
+.item2{
+ 
+    flex: 1 0 auto;
+  
+}
+
+.item1{
+  flex: 0 0 auto;
+}
+
+.button{
+  background-color: #5200F5; 
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.WorkloadItem-secondaryButton{
+  background-color: #D6C0FF; 
+  border: none;
+  color: #5200F5;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
 }

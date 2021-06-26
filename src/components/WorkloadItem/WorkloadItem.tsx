@@ -20,7 +20,7 @@ export interface WorkloadItemProps extends
 
 
 const WorkloadItem: React.SFC<WorkloadItemProps> = (props) => (
-  <div className="WorkloadItem">
+  <div className="WorkloadItem border w80 p3 mb2">
     <div>
       <h3 className="WorkloadItem-heading">Workload #{props.id}</h3>
       <span className="WorkloadItem-subHeading">Complexity: {props.complexity}</span>
@@ -31,7 +31,7 @@ const WorkloadItem: React.SFC<WorkloadItemProps> = (props) => (
           <>
             <span><TimeAgo date={props.completeDate} /></span>
             <button 
-              className="WorkloadItem-secondaryButton" 
+              className="WorkloadItem-secondaryButton button" 
               onClick={props.onCancel}
             >
               Cancel
