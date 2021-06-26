@@ -26,13 +26,27 @@ const createWorkload: AppEpic = (action$, state$) => (
   )
 );
 
+const cancelWorkload: AppEpic = (action$, state$) => {
+  return action$.pipe(
+    filter(isActionOf(workloadsActions.cancel)),
+    map(action => action.payload),
+    mergeMap(async (payload) => {
+      const workLoad = await service.cancel(payload);
+      return workloadsActions.updateStatus({ id: workLoad.id, status: workLoad.status });
+
+
+    })
+  );
+
+
+}
 
 
 
 
 
 export const epics = combineEpics(
-  createWorkload,
+  createWorkload,cancelWorkload
 
  
 );
